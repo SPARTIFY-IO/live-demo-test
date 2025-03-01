@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-03-01T06:11:26.805Z",
+    "end": "2025-03-01T06:11:41.698Z",
+    "duration": 14893,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a1792aaf-6fa4-46cb-bce6-bbe8c793b29f",
+      "title": "",
+      "fullFile": "spartify/e2e/spartify_home.cy.ts",
+      "file": "spartify/e2e/spartify_home.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "198f8381-d41b-457d-9686-23b6dd8acc43",
+          "title": "OrangeHRM Home Dashboard - Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test - Verify Profile Logout",
+              "fullTitle": "OrangeHRM Home Dashboard - Test Suite Test - Verify Profile Logout",
+              "timedOut": null,
+              "duration": 6978,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage\n    .visitUrl()\n    .step_enterUsername(\"Admin\")\n    .step_enterPassword(\"admin123\")\n    .step_clickLogin()\n    .step_profileOption(\"Logout\");",
+              "err": {},
+              "uuid": "546c12cb-b38f-4e57-8935-060d69e67112",
+              "parentUUID": "198f8381-d41b-457d-9686-23b6dd8acc43",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test - Verify Given Menu Search Selection",
+              "fullTitle": "OrangeHRM Home Dashboard - Test Suite Test - Verify Given Menu Search Selection",
+              "timedOut": null,
+              "duration": 7882,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage\n    .visitUrl()\n    .step_enterUsername(\"Admin\")\n    .step_enterPassword(\"admin123\")\n    .step_clickLogin()\n    .step_searchOption(\"Leave\")\n    .step_profileOption(\"Logout\");",
+              "err": {},
+              "uuid": "6f683525-7f1c-4bca-a8ec-61dba9ac2d0a",
+              "parentUUID": "198f8381-d41b-457d-9686-23b6dd8acc43",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "546c12cb-b38f-4e57-8935-060d69e67112",
+            "6f683525-7f1c-4bca-a8ec-61dba9ac2d0a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14860,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "spartify-report/report",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "live-demo-test",
+  "version": "1.0.0",
+  "description": "spartify-cy-test",
+  "scripts": {
+    "initialize": "node spartify.initialize.js --initialize",
+    "sp:run:test": "node spartify.initialize.js --runTest",
+    "sp:open:test": "node spartify.initialize.js --openTest"
+  },
+  "keywords": [
+    "spartify.io",
+    "spartans-test"
+  ],
+  "author": "@spartify",
+  "license": "MIT",
+  "devDependencies": {
+    "@spartify.io/spartify-engine": "2.1.54",
+    "typescript": "^5.2.2",
+    "dotenv": "^16.4.7"
+  }
+}
